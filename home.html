@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mendong Craft - Home</title>
+  <link rel="stylesheet" href="../static/home.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-logo">
+      <img src="{{ url_for('static', filename='Logo.png') }}" alt="" width="50">
+      <span class="nav-title">Mendong Craft</span>
+    </div>
+    <div class="nav-button">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="Add.html"> Add</a>
+    </div>
+  </div>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-image"></div><div class="product-image" style="background-image: url('../static/zz.png');"></div>
+    <h3>Produk Populer di 2024</h3>
+    <h1>Kreasi Kami, Dibuat Sesuai Imajinasi Anda.</h1>
+    <p>
+      Selamat datang di situs web Belanja Kerajinan Tangan kami! Kami berdedikasi untuk menawarkan produk kerajinan tangan premium dengan harga terjangkau, memastikan kepuasan setiap pelanggan dalam setiap pembelian. Mulailah berbelanja sekarang dan rasakan pesona kerajinan tangan!
+    </p>
+    <a href="/daftar"><button>Belanja Sekarang</button></a>
+  </div>
+
+</div>
+
+
+
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature-box feature-free-shipping">
+      <div class="feature-content">
+        <h3>Bebas Biaya Kirim</h3>
+        <p>Nikmati pengiriman gratis untuk setiap pesanan.</p>
+      </div>
+    </div>
+    <div class="feature-box feature-easy-returns">
+      <div class="feature-content">
+        <h3>Pengembalian Mudah</h3>
+        <p>Pengembalian tanpa repot untuk setiap pembelian.</p>
+      </div>
+    </div>
+    <div class="feature-box feature-secure-payment">
+      <div class="feature-content">
+        <h3>Pembayaran Aman</h3>
+        <p>Metode pembayaran yang aman dan terjamin.</p>
+      </div>
+    </div>
+    <div class="feature-box feature-money-back">
+      <div class="feature-content">
+        <h3>Garansi Kembali</h3>
+        <p>Jaminan uang kembali jika Anda tidak puas.</p>
+      </div>
+    </div>
+  </div>
+<!-- Produk Populer Section -->
+<div class="product-section popular-products">
+  <h2>Produk Populer</h2>
+  <div class="product-grid">
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../static/tasmendong.png');"></div>
+          <h3>Mendong Elegance</h3>
+          <p>Hand Bag</p>
+          <div class="product-info">
+              <span>$100</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../features/taskecilmendong.png');"></div>
+          <h3>Mendong Clutch</h3>
+          <p>Leather Fusion</p>
+          <div class="product-info">
+              <span>$40</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../features/topimendong.png');"></div>
+          <h3>Mendong Hat</h3>
+          <p>Heritage</p>
+          <div class="product-info">
+              <span>$35</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../features/sendalmendong.png');"></div>
+          <h3>Mendong Sandals</h3>
+          <p>Ethnic</p>
+          <div class="product-info">
+              <span>$25</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Produk Terlaris Section -->
+<div class="product-section best-selling-products">
+  <h2>Penjualan Terlaris</h2>
+  <div class="product-grid">
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../static/tisumendong.png');"></div>
+          <h3>Mendong Tissue Box</h3>
+          <p>Tissue Box</p>
+          <div class="product-info">
+              <span>$25</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../features/boxmendong.png');"></div>
+          <h3>Mendong Storage Box</h3>
+          <p>Storage Box</p>
+          <div class="product-info">
+              <span>$35</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../features/tatakanemendong.png');"></div>
+          <h3>Mendong Tray</h3>
+          <p>Tray</p>
+          <div class="product-info">
+              <span>$25</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image" style="background-image: url('../features/endogmendong.png');"></div>
+          <h3>Mendong Bowl</h3>
+          <p>Decor Bowl</p>
+          <div class="product-info">
+              <span>$20</span>
+              <button class="add-to-cart">+</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Limited Offers Section -->
+<div class="limited-offers">
+  <div class="offers-container">
+      <!-- Text Offer Section -->
+      <div class="offer-text">
+          <h3>Limited Offers</h3>
+          <p>Dapatkan Penawaran Terbaik untuk Produk Pernikahan!!</p>
+      </div>
+
+      <!-- Image Offer Section -->
+      <div class="offer-image">
+          <img src="{{ url_for('features', filename='images/tasmendong.png') }}" alt="" />
+      </div>
+  </div>
+
+  <!-- Time Remaining Section -->
+  <div class="offer-time-and-button">
+    <div class="time-remaining">
+        <h4>Waktu Tersisa</h4>
+        <div class="countdown">
+            <span class="time">2</span> : <span class="time">14</span> : <span class="time">38</span>
+        </div>
+    </div>
+
+    <!-- Kunjungi Toko Button -->
+    <div class="visit-store-btn">
+        <button class="store-button">Kunjungi Toko</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <!-- Green Background Section (Light Green) - Bagian Atas -->
+  <div class="footer-green-light">
+      <div class="footer-container">
+          <!-- Section 1: Logo and Description -->
+          <div class="footer-section footer-logo">
+
+              <span class="footer-title">Mendong Craft</span>
+              <p class="footer-desc">
+                  Mendong K Craft is a craft business founded by Asep Barnas in 1999 in Walagar Village, Kamulyan Village, Manon Jaya District, Tasikmalaya, West Java.
+              </p>
+          </div>
+
+          <!-- Section 2: Categories -->
+          <div class="footer-section footer-categories">
+              <h3>Top Categories</h3>
+              <ul>
+                  <li>Home Decor</li>
+                  <li>Eco-Friendly Products</li>
+                  <li>Storage & Organization</li>
+                  <li>Tableware</li>
+                  <li>Gifts & Souvenirs</li>
+              </ul>
+          </div>
+
+          <!-- Section 3: Social Links -->
+          <div class="footer-section footer-socials">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">YouTube</a></li>
+                  <li><a href="#">Twitter</a></li>
+              </ul>
+          </div>
+
+          <!-- Section 4: Contact -->
+          <div class="footer-section footer-contact">
+              <h3>Contact</h3>
+              <p>Jl. RTA. Prawira Adiningrat No.72, Margaluyu, Kec. Manonjaya, Kabupaten Tasikmalaya, Jawa Barat 46197</p>
+              <p><a href="tel:(0265) 381693">(0265) 381693</a></p>
+              <p><a href="mailto:sepbarnas@yahoo.com">sepbarnas@yahoo.com</a></p>
+          </div>
+      </div>
+  </div>
+
+

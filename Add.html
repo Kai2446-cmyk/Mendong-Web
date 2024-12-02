@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Mendong Craft</title>
+  <link rel="stylesheet" href="../static/add.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+</head>
+<body>
+
+  <div class="navbar">
+    <!-- Logo dan Teks -->
+    <div class="nav-logo">
+      <img src="{{ url_for('static', filename='logo kecil.png') }}" alt="">
+      <span class="nav-title">Mendong Craft</span>
+    </div>
+
+    <!-- Link Navigasi -->
+    <div class="nav-button">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="Add.html"> Add</a>
+    </div>
+
+    <div class="icon-wrapper">
+      <!-- Ikon Like -->
+      <div class="icon">
+        <a href="/daftar"><img src="{{ url_for('static', filename='Like.png') }}" alt="">
+        <span class="badge">3</span></a>
+      </div>
+      <!-- Ikon Shopping Bag -->
+      <div class="icon">
+        <a href="/daftar"><img src="{{ url_for('static', filename='Shopping bag.png') }}" alt="">
+        <span class="badge">0</span></a>
+      </div>
+      <!-- Ikon Profile -->
+      <div class="icon">
+        <a href="/daftar"><img src="{{ url_for('static', filename='Profile.png') }}" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <section id="about" class="about-section">
+    <div class="container about-container">
+      <div class="about-image">
+          <img src="../static/Group 9.jpg" alt="about">
+      </div>
+
+      <div class="about-content">
+        <h2 class="product-title">Mendong Elegance</h2>
+        <div class="product-rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating">(4.7 rating)</span>
+        </div>
+        <div class="product-price">
+          <span>$100</span>
+          <span class="product-type">Eco-Friendly Products</span>
+        </div>
+          <p>
+            Tas anyaman mendong, dibuat dari serat alami, memamerkan kekayaan warisan Indonesia. Perajin terampil menenun setiap bagian dengan tangan, menciptakan tas ramah lingkungan yang melambangkan kebanggaan budaya Tasikmalaya di Jawa Barat.          </p>
+          <a href="../html/about.html" class="btn green">Tambahkan ke keranjang</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="review-section">
+    <div class="header">
+      <span>Deskripsi</span>
+      <span>Ulasan (2)</span>
+    </div>
+    <div class="deskripsi">
+      <p>
+        Tas anyaman mendong merupakan kerajinan tradisional Indonesia yang dibuat dengan teknik menenun yang cermat dan presisi menggunakan serat mendong. Kerajinan ini dikenal dengan sebutan "tas anyaman alami" dan kerap dijadikan simbol kekayaan budaya lokal. Proses produksinya melibatkan serat mendong yang dipilih secara khusus, yang kemudian ditenun secara manual oleh perajin berpengalaman untuk menciptakan pola yang indah dan unik. Tas anyaman mendong merupakan warisan budaya yang sudah ada sejak lama dan menjadi sumber kebanggaan bagi masyarakat Tasikmalaya, Jawa Barat.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Produk Populer Section -->
+  <div class="product-section">
+    <h2>Anda Mungkin Tertarik</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('../static/tisumendong.png');"></div>
+            <h3>Mendong Tissue Box</h3>
+            <p>Tissue Box</p>
+            <div class="product-info">
+                <span>$100</span>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('../static/mendongtray.jpg');"></div>
+            <h3>Mendong Tray</h3>
+            <p>Tray</p>
+            <div class="product-info">
+                <span>$40</span>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('../static/endogmendong.png');"></div>
+            <h3>Mendong Bowl</h3>
+            <p>Decor Bowl</p>
+            <div class="product-info">
+                <span>$35</span>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('../static/boxmendong.png');"></div>
+            <h3>Storage Box</h3>
+            <p>Box</p>
+            <div class="product-info">
+                <span>$25</span>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <!-- Light Green Background Section (Top) -->
+  <div class="footer-green-light">
+    <div class="footer-container">
+      <!-- Section 1: Logo and Description -->
+      <div class="footer-section footer-logo">
+        <span class="footer-title">Mendong Craft</span>
+        <p class="footer-desc">
+          Mendong K Craft is a craft business founded by Asep Barnas in 1999 in Walagar Village, Kamulyan Village, Manonjaya District, Tasikmalaya, West Java.
+        </p>
+      </div>
+
+      <!-- Section 2: Categories -->
+      <div class="footer-section footer-categories">
+        <h3>Top Categories</h3>
+        <ul>
+          <li><a href="#">Home Decor</a></li>
+          <li><a href="#">Eco-Friendly Products</a></li>
+          <li><a href="#">Storage & Organization</a></li>
+          <li><a href="#">Tableware</a></li>
+          <li><a href="#">Gifts & Souvenirs</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Social Links -->
+      <div class="footer-section footer-socials">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 4: Contact -->
+      <div class="footer-section footer-contact">
+        <h3>Contact</h3>
+        <p>Jl. RTA. Prawira Adiningrat No.72, Margaluyu, Kec. Manonjaya, Kabupaten Tasikmalaya, Jawa Barat 46197</p>
+        <p><a href="tel:(0265) 381693">(0265) 381693</a></p>
+        <p><a href="mailto:sepbarnas@yahoo.com">sepbarnas@yahoo.com</a></p>
+      </div>
+    </div>
+  </div>
+</footer>

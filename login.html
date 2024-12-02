@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mendong Craft - Login</title>
+  <link rel="stylesheet" href="../static/login.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+  <div class="container">
+    <!-- Background Image -->
+    <div class="background-image"></div>
+
+    <!-- Login Box -->
+    <div class="login-box">
+      <h1 class="login-heading">Masuk</h1>
+      <h2 class="teks-akun">Belum memiliki akun?</h2>
+
+      <!-- Input Fields -->
+      <div class="input-container">
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-container">
+        <input type="password" placeholder="Password" required>
+      </div>
+
+      <!-- Remember Me Checkbox and Forgot Password -->
+      <div class="custom-checkbox">
+        <input type="checkbox" id="option">
+        <label for="option">Ingat Saya</label>
+      </div>
+      <div class="new-password">
+        <a href="">Lupa Password</a>
+      </div>
+
+      <!-- Buttons -->
+      <!-- Changed the "Masuk" button to an anchor link for navigation -->
+      <a href="home.html">
+        <button class="login-button">Masuk</button>
+      </a>
+      <button class="daftar-button">Daftar</button>
+    </div>
+  </div>
+</body>
+</html>

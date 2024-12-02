@@ -1,0 +1,336 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(253, 239, 230, 0.32); /* Soft beige background */
+    padding: 20px 50px;
+  }
+
+  .nav-logo img {
+    width: 40px;
+    height: auto;
+  }
+
+  .nav-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+
+  .nav-button a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .nav-button a:hover {
+    color: #B2D6CF; /* Light teal hover effect */
+  }
+
+  /* Shop Title Section */
+  .shop-title {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #B2D6CF; /* Soft teal background */
+  }
+
+  .shop-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .shop-title p {
+    font-size: 18px;
+    color: #555;
+  }
+
+  /* Produk Section */
+  .products-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .models-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .model {
+    width: 900px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .male {
+    background-image: url('../static/bapakkayu.png');
+  }
+
+  .female {
+    background-image: url('../static/ibukayu.png');
+  }
+
+  /* Centering the "Produk" text in the middle of the male model */
+  .model.male h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-family: 'Piazzolla';
+    font-weight: 800;
+    color: #9ae488;
+  }
+
+  /* Filters Section */
+  .filters {
+    display: flex;
+    justify-content: center; /* Center the filters horizontally */
+    align-items: center; /* Align vertically */
+    padding: 20px;
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .filter-category, .filter-sort {
+    display: flex;
+    align-items: center;
+  }
+
+  .filter-btn, .sort-btn {
+    background-color: #212121;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .filter-btn:hover, .sort-btn:hover {
+    background-color: #B2D6CF; /* Light teal hover effect */
+  }
+
+  .arrow {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .search-products input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+
+  .search-products button {
+    background-color: #212121;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .search-products button:hover {
+    background-color: #B2D6CF; /* Light teal hover effect */
+  }
+
+  /* Products Section */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted the min size of each product card */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Product Card */
+  .product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .product-image {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    width: 100%; /* Ensure image fits inside the container */
+  }
+
+  .product-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .product-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  .product-card span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .add-to-cart {
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .add-to-cart:hover {
+    background-color: #B2D6CF; /* Light teal hover effect */
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212121;
+    color: white;
+  }
+
+
+  /* Footer Section */
+.footer {
+    width: 100%;
+  }
+
+  /* Light Green Footer Section (Atas) */
+  .footer-green-light {
+    background-color: #5A6563;
+    color: #fff;
+    padding: 100px 110px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Footer Section Styling */
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-logo-img {
+    width: 50px;
+    height: auto;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .footer-desc {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+  }
+
+  .footer-categories h3,
+  .footer-socials h3,
+  .footer-contact h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .footer-categories ul,
+  .footer-socials ul,
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-categories ul li,
+  .footer-socials ul li,
+  .footer-contact ul li {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+  }
+
+  .footer-categories ul li a,
+  .footer-socials ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .footer-categories ul li a:hover,
+  .footer-socials ul li a:hover {
+    color: #fff;
+  }
+
+  .footer-contact p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+  }
+
+  .footer-contact a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+  }
+
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: white;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mendong Craft - Daftar</title>
+  <link rel="stylesheet" href="../static/daftar.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='daftar.css') }}">
+</head>
+<body>
+  <div class="container">
+    <!-- Background Image -->
+    <div class="background-image"></div>
+    
+    <!-- Login Box -->
+    <div class="daftar-box">
+      <h1 class="daftar-heading">Daftar</h1>
+      <h2 class="teks-akun">Belum memiliki akun?</h2>
+      <div class="input-container">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="input-container">
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-container">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <div class="custom-checkbox">
+        <input type="checkbox" id="option">
+        <label for="option">Saya setuju dengan Syarat Ketentuan dan Kebijakan Pribadi</label>
+    </div>
+      <button class="login-button">Masuk</button>
+      <button class="daftar-button">Daftar</button>
+    </div>
+
+  </div>
+</body>
+</html>

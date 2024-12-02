@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Mendong Craft</title>
+  <link rel="stylesheet" href="../static/shop.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='shop.css') }}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-logo">
+      <img src="logo-kecil.png" alt="Mendong Craft Logo">
+      <span class="nav-title">Mendong Craft</span>
+    </div>
+    <div class="nav-button">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="Add.html"> Add</a>
+    </div>
+  </div>
+
+  <!-- Shop Title Section -->
+  <div class="shop-title">
+    <h2>Shop Our Collection</h2>
+    <p>Explore our hand-crafted products and more.</p>
+  </div>
+
+  <!-- Produk Section -->
+  <div class="products-section">
+    <div class="models-container">
+      <!-- Image placeholders for Male and Female models -->
+      <div class="model male" style="background-image: url('../static/bapakkayu.png');">
+        <h3>Produk</h3>
+      </div>
+      <div class="model female" style="background-image: url('../static/ibukayu.png');"></div>
+    </div>
+  </div>
+
+  <!-- Filters Section moved below the models -->
+  <div class="filters">
+    <div class="filter-category">
+      <button class="filter-btn">Filter by Category</button>
+      <span class="arrow">↓</span>
+    </div>
+    <div class="filter-sort">
+      <button class="sort-btn">Sort By</button>
+      <span class="arrow">↓</span>
+    </div>
+    <div class="search-products">
+      <input type="text" placeholder="Search Products...">
+      <button>🔍</button>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('../features/tasmendong.png');"></div>
+      <h3>Mendong Elegance</h3>
+      <p>Hand Bag</p>
+      <span>$100</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('../features/taskecilmendong.png');"></div>
+      <h3>Mendong Clutch</h3>
+      <p>Leather Fusion</p>
+      <span>$40</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('../features/topimendong.png');"></div>
+      <h3>Mendong Hat</h3>
+      <p>Heritage</p>
+      <span>$35</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('../features/sendalmendong.png');"></div>
+      <h3>Mendong Sandals</h3>
+      <p>Ethnic</p>
+      <span>$25</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Green Background Section (Light Green) - Bagian Atas -->
+    <div class="footer-green-light">
+        <div class="footer-container">
+            <!-- Section 1: Logo and Description -->
+            <div class="footer-section footer-logo">
+
+                <span class="footer-title">Mendong Craft</span>
+                <p class="footer-desc">
+                    Mendong K Craft is a craft business founded by Asep Barnas in 1999 in Walagar Village, Kamulyan Village, Manon Jaya District, Tasikmalaya, West Java.
+                </p>
+            </div>
+
+            <!-- Section 2: Categories -->
+            <div class="footer-section footer-categories">
+                <h3>Top Categories</h3>
+                <ul>
+                    <li>Home Decor</li>
+                    <li>Eco-Friendly Products</li>
+                    <li>Storage & Organization</li>
+                    <li>Tableware</li>
+                    <li>Gifts & Souvenirs</li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Social Links -->
+            <div class="footer-section footer-socials">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 4: Contact -->
+            <div class="footer-section footer-contact">
+                <h3>Contact</h3>
+                <p>Jl. RTA. Prawira Adiningrat No.72, Margaluyu, Kec. Manonjaya, Kabupaten Tasikmalaya, Jawa Barat 46197</p>
+                <p><a href="tel:(0265) 381693">(0265) 381693</a></p>
+                <p><a href="mailto:sepbarnas@yahoo.com">sepbarnas@yahoo.com</a></p>
+            </div>
+        </div>
+    </div>
+ <!-- Footer -->
+ <footer>
+    <p>&copy; 2024 Mendong Craft. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

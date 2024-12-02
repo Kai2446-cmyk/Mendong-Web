@@ -1,0 +1,510 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar, .rectangle-16 {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  background: rgba(253, 239, 230, 0.32);
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  justify-content: space-between;
+}
+
+.nav-button {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-button a {
+  font-family: 'Prompt', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.hero {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #B2D6CF;
+  height: 600px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Atur teks ke bawah */
+  gap: 20px; /* Jarak antar elemen */
+  max-width: 600px;
+}
+
+.hero-content h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  background: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background: #333;
+}
+
+.hero-image {
+  width: 200px;
+  height: 100px;
+  background: url('zz.png') no-repeat center/contain;
+  position: center;
+  right: 200px;
+}
+
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  gap: 20px;
+}
+
+.feature-box {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Background colors for each box */
+.feature-free-shipping {
+  background-color: #FDEFE6;
+}
+
+.feature-easy-returns {
+  background-color: #B2D6CF;
+}
+
+.feature-secure-payment {
+  background-color: #E2F2B2;
+}
+
+.feature-money-back {
+  background-color: #D6E5FB;
+}
+
+/* Add icon using pseudo-element */
+.feature-box::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #212121; /* Circle background */
+  border-radius: 50%;
+  display: flex;
+}
+
+/* Free Shipping Icon */
+.feature-free-shipping::before {
+  background-image: url('../features/mobilkirim.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+}
+
+/* Easy Returns Icon */
+.feature-easy-returns::before {
+  background-image: url('../features/pengembalian.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+}
+
+/* Secure Payment Icon */
+.feature-secure-payment::before {
+  background-image: url('../features/keamanan.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+}
+
+/* Money Back Guarantee Icon */
+.feature-money-back::before {
+  background-image: url('../features/pengembalian.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+}
+
+/* Feature content styling */
+.feature-content {
+  margin-left: 80px; /* Offset to account for icon space */
+}
+
+.feature-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+/* Product Section */
+.product-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.product-section h2 {
+  font-family: 'Prompt', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: #fff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+
+.product-card .product-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Customize images for each product in the popular section */
+.popular-products .product-card:nth-child(1) .product-image {
+  background-image: url('../static/tasmendong.png');
+}
+
+.popular-products .product-card:nth-child(2) .product-image {
+  background-image: url('images/populer-product2.png');
+}
+
+.popular-products .product-card:nth-child(3) .product-image {
+  background-image: url('images/populer-product3.png');
+}
+
+.popular-products .product-card:nth-child(4) .product-image {
+  background-image: url('images/populer-product4.png');
+}
+
+/* Customize images for each product in the best-selling section */
+.best-selling-products .product-card:nth-child(1) .product-image {
+  background-image: url('images/terlaris-product1.png');
+}
+
+.best-selling-products .product-card:nth-child(2) .product-image {
+  background-image: url('images/terlaris-product2.png');
+}
+
+.best-selling-products .product-card:nth-child(3) .product-image {
+  background-image: url('images/terlaris-product3.png');
+}
+
+.best-selling-products .product-card:nth-child(4) .product-image {
+  background-image: url('images/terlaris-product4.png');
+}
+
+/* Product details */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #565656;
+  margin-bottom: 15px;
+}
+
+/* Product info */
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.add-to-cart {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #0c1e5f;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart:hover {
+  background: #172b85;
+}
+
+/* Limited Offers Section */
+.limited-offers {
+  background-color: #78928D; /* Light background color */
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+.offers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-text h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.offer-text p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+}
+
+.offer-image img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Time Remaining Section */
+.offer-time-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.time-remaining h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.countdown {
+  font-size: 40px;
+  font-weight: 700;
+  color: #212121;
+  display: flex;
+  gap: 10px;
+}
+
+.time {
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Kunjungi Toko Button */
+.store-button {
+  font-size: 24px;
+  padding: 15px 40px;
+  background-color: #5A6563;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.store-button:hover {
+  background-color: #444; /* Darken background on hover */
+}
+.offer-image img {
+  width: 300px;
+  background-image: url('../features/tasmendong.png');
+  height: 220px;
+  border-radius: 1000px;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+}
+
+/* Light Green Footer Section (Atas) */
+.footer-green-light {
+  background-color: #5A6563;
+  color: #fff;
+  padding: 50px 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Footer Section Styling */
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.footer-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-desc {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.footer-categories h3,
+.footer-socials h3,
+.footer-contact h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-categories ul,
+.footer-socials ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-categories ul li,
+.footer-socials ul li,
+.footer-contact ul li {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.footer-categories ul li a,
+.footer-socials ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-categories ul li a:hover,
+.footer-socials ul li a:hover {
+  color: #fff;
+}
+
+.footer-contact p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+
+
+
